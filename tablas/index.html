@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas de Baloncesto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Preinfantil Femenino</h1>
+    <div class="coaches-section">
+        <h3>Entrenadores:</h3>
+        <p>Entrenador 1: Cristina Bazalo Castro</p>
+        <p>Entrenador 2: Miguel Bernier Bonilla</p>
+    </div>
+    <div class="table-container">
+        <table id="statsTable">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Puntos</th>
+                    <th>Asistencias</th>
+                    <th>Rebotes</th>
+                    <th>Tapones</th>
+                    <th>Robos</th>
+                    <th>Perdidas</th>
+                    <th>Faltas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las filas de jugadores serán añadidas aquí -->
+            </tbody>
+        </table>
+    </div>
+    
+
+    <!-- Botones para añadir jugador y descargar en PDF -->
+    <div class="button-container">
+        <button type="button" onclick="addPlayer()">Añadir Jugador</button>
+        <button type="button" onclick="downloadPDF()">Descargar PDF</button>
+    </div>
+
+    <!-- Incluye la librería jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/jspdf.plugin.autotable.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
